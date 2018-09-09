@@ -177,7 +177,7 @@ def crawl(request):
     return HttpResponse("<h1>Crawling on process</h1>")
     
 class ResultsView(generic.ListView):
-    template_name = 'companies/index.html'
+    template_name = 'resanal/index.html'
     context_object_name = 'all_student'
 
     def get_queryset(self):

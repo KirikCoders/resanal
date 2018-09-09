@@ -4,6 +4,8 @@ from rest_framework.urlpatterns import format_suffix_patterns
 from resanal import views
 
 urlpatterns = [
+    #temporary url
+    #url(r'',admin.site.urls), 
     url(r'^admin/', admin.site.urls),
     url(r'^json/', views.ResultList.as_view()),
     url(r'^json1/', views.FetchList.as_view()),
